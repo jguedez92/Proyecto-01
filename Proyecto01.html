@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/Semana-01/style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function showSection(nom) {
+
+            var perf = document.getElementById('perfil');
+            var exp = document.getElementById('experiencia');
+            var cont = document.getElementById('contacto');
+
+            if (nom == 'perfil') {
+                perf.className = 'mostrado';
+                exp.className = 'oculto';
+                cont.className = 'oculto';
+            }
+            if (nom == 'experiencia') {
+                perf.className = 'oculto';
+                exp.className = 'mostrado';
+                cont.className = 'oculto';
+            }
+            if (nom == 'contacto') {
+                perf.className = 'oculto';
+                exp.className = 'oculto';
+                cont.className = 'mostrado';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="img">
+
+            </div>
+            <div id="name">
+                John Guedez
+            </div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li id="op-1">
+                    <a href="#" onclick="showSection('perfil')">Perfil</a>
+                </li>
+                <li id="op-2">
+                    <a href="#" onclick="showSection('experiencia')">Experiencia</a>
+                </li>
+                <li id="op-3">
+                    <a href="#" onclick="showSection('contacto')">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div id="perfil" class="mostrado">
+                <h1>Perfil Profesional</h1>
+                <p>
+                    Profesional de la Informática, con una solida formacion tecnica, capacitado para realizar multiples
+                    tareas, tales como instalacion y reparacion de sistemas informaticos con total eficiencia, capacidad
+                    para tratar con publico, y preparado para explicar y desarrollar conceptos tecnicos complejos a
+                    clientes y personas inexpertas de forma clara y comprensible.
+                </p>
+                <h1>Conocimientos</h1>
+                <section class="skills">
+                    <label for="">HTML</label>
+                    <meter max="100" value="70"></meter>
+                    <label for="">CSS</label>
+                    <meter max="100" value="70"></meter>
+                    <label for="">javascript</label>
+                    <meter max="100" value="30"></meter>
+                    <label for="">PHP</label>
+                    <meter max="100" value="50"></meter>
+                    <label for="">MySQL</label>
+                    <meter max="100" value="50"></meter>
+                </section>
+                <h1>Skills</h1>
+                <p>
+                    - Amplia experiencia en mantenimiento e instalación de ordenadores.</br></br>
+                    - completo dominio en configuración de hardware y aplicaciones de software.</br></br>
+                    - Habilidades extraordinarias en la instalación y mantenimiento de cables de red así como también de
+                    routers wifi, modems, swiches.</br></br>
+                    - Alta capacidad de análisis y resolución de problemas.</br></br>
+                    - Conocimientos en Lenguajes de programación web como php,  javascript, mysql, postgrest , html y
+                    css.</br></br>
+                    - Manejo de herramientas como xampp y gestores de contenido como wordpress y wix.</br></br>
+                    - Capacidad de aprendizaje rápido y adaptación en los ambientes laborales.</br></br>
+                </p>
+            </div>
+            <div id="experiencia" class="oculto">
+                <h1>Experiencia laboral</h1>
+                <p>
+                    <b>
+                        Televisora Tves (Tecnico de Soporte y Redes nivel 3).<br>
+                        feb 2017 - sep 2019.<br>
+                    </b>
+                    - Instalación y mantenimiento de sistemas operativos, hardware y software.<br>
+                    -atención y resolución de problemas de sistemas informáticos y ordenadores.<br>
+                    - mantenimiento de plataforma e infraestructura de redes.<br>
+                    -instalacion de sistemas de cableado de red y telefonia.<br>
+                </p>
+                <h1>Formacion Academica</h1>
+                <p>
+                    <b>GeeksHubs (Actual Madrid - España).</b>
+                    <br> Web Development Full Stack<br><br>
+                    
+                    <b>Instituto Universitario ISUM (2018 Caracas - Venezuela).</b>
+                    <br>Educación Superior Universitaria en Informática.<br><br>
+                    
+                    <b>Instituto Keys  (2018 Caracas - Venezuela)</b>
+                    <br>Técnico Instalador de Redes.<br>
+                </p>
+            </div>
+            <div id="contacto" class="oculto">
+                <h1>Contacto</h1>
+                <fieldset>
+                    <legend>Formulario</legend>
+                    <div>
+                        <label for="">Nombre</label>
+                        <input type="text"><br>
+                        <label for="">Apellido</label>
+                        <input type="text"><br>
+                        <label for="">Correo</label>
+                        <input type="text"><br>
+                        <label for="">Tlf</label>
+                        <input type="text"><br><br>
+                        <input class="submit" type="submit" name="Enviar" value="Enviar">
+                    </div>
+                </fieldset>
+                <p><b>NOTA: </b>
+                    Ingrese los datos que aparecen a continuación para ponerme en contacto con vosotros.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div>
+                Hecho por JotaGe&COPY;
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
